@@ -100,7 +100,7 @@ public class MetodosBusqueda {
                     return persona;
                 }
             }
-
+            //Siempre que se trate de objetos se debe hacer un return null sino no funcion y dira que metodo no retorna.
             return null;
         }
         
