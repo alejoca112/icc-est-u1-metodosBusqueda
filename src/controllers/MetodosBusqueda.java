@@ -109,12 +109,13 @@ public class MetodosBusqueda {
             for(char letra: persona.getName().toCharArray()){
                 int intvalorLetra = (int) letra;
                 valorNombre += (int) intvalorLetra;
+                
             }
-            if (valorNombre == i) {
-            return persona;
+            if(valorNombre == valueName){
+                return persona;
+            }
         }
-            return null;
-        }
+        return null;
         
 
     }    

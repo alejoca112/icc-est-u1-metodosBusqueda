@@ -24,7 +24,8 @@ public class Persona {
         this.edad = edad;
     }
 
+    @Override
     public String toString(){
-        return "Nombre: " + nombre + "edad: " + edad;
+        return "Nombre: " + nombre + " edad: " + edad;
     }
 }
