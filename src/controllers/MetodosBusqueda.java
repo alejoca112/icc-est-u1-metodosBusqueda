@@ -110,11 +110,12 @@ public class MetodosBusqueda {
                 int intvalorLetra = (int) letra;
                 valorNombre += (int) intvalorLetra;
             }
-        }
-        if (valorNombre == i){
+            if (valorNombre == i) {
             return persona;
         }
-        return null;
+            return null;
+        }
+        
 
     }    
         
