@@ -10,3 +10,4 @@
 
 Salida de Java
 
+![alt text](assets/BusquedaLinealObject.png)
