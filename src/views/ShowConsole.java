@@ -73,4 +73,14 @@ public class ShowConsole {
                 : "No se encontro a la persona con edad mayor a: " + age
             );
     }
+
+
+    public void showPersonResult(Persona resultadoPer3, int i, boolean valorNombre) {
+        System.out.println(
+            resultadoPer3 != null
+                ? "Se encontro la persona: " + resultadoPer3
+                : "No se encontro a la persona con valor de nombre igual a: " + i
+            );
+
+    }
 }

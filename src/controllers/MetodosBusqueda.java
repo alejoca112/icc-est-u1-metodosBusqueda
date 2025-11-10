@@ -3,7 +3,6 @@ import views.ShowConsole;
 import models.Persona;
 
 
-
 public class MetodosBusqueda {
     private ShowConsole showConsole;
     private int[] arreglo;
@@ -103,6 +102,21 @@ public class MetodosBusqueda {
             //Siempre que se trate de objetos se debe hacer un return null sino no funcion y dira que metodo no retorna.
             return null;
         }
+    
+    public Persona findPersonByValueName(Persona[] personas, int valueName) {
+        for(Persona persona : personas){
+            int valorNombre = 0;
+            for(char letra: persona.getName().toCharArray()){
+                int intvalorLetra = (int) letra;
+                valorNombre += (int) intvalorLetra;
+            }
+        }
+        if (valorNombre == i){
+            return persona;
+        }
+        return null;
+
+    }    
         
     
     
