@@ -1,4 +1,7 @@
 package views;
+
+import models.Persona;
+
 public class ShowConsole {
 
 
@@ -52,5 +55,22 @@ public class ShowConsole {
         } else {
             System.out.println("Se encontro el valor:" + "{" + result5 + "}");
         }
+    }
+
+
+    public void showPersonResult(Persona resultadoPer, String name) {
+        System.out.println(
+            resultadoPer != null
+                ? "Se encontro la persona: " + resultadoPer
+                : "No se encontro a la persona: " + name
+            );
+    }
+    
+    public void showPersonResult(Persona resultadoPer2, int age) {
+        System.out.println(
+            resultadoPer2 != null
+                ? "Se encontro la persona: " + resultadoPer2
+                : "No se encontro a la persona con edad mayor a: " + age
+            );
     }
 }

@@ -1,5 +1,6 @@
 package controllers;
 import views.ShowConsole;
+import models.Persona;
 
 
 
@@ -74,5 +75,36 @@ public class MetodosBusqueda {
         }
         return null;
     }
+
+    public Persona searchPersonByName(
+        Persona[] personas,
+        String name) {
+    for (Persona persona : personas) {
+        if(persona.getName().equals(name)){
+            return persona;
+        }
+            
+        
+    }        
+        return null;
+    }
+
+
+    //Encontrar una persona que sea mayor de: age 
+    //Y La edad sea impar
+    public Persona findPersonByAgeAnd(
+        Persona[] personas,
+        int age) {
+            for(Persona persona : personas){
+                if(persona.getAge() > age && persona.getAge() % 2 != 0){
+                    return persona;
+                }
+            }
+
+            return null;
+        }
+        
+    
+    
 }
 
